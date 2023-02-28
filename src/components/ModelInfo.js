@@ -14,9 +14,7 @@ const ModelInfo = ({ data }) => {
       <article className="d-flex align-items-center justify-content-center">
         {tags.map((tag, i) => (
           <div className="d-flex flex-wrap" key={i}>
-            <span className="text-danger py-1 px-2 rounded-3 bg-secondary">
-              {tag}
-            </span>
+            <span className="py-1 px-2 rounded-3 bg-secondary text">{tag}</span>
           </div>
         ))}
       </article>
