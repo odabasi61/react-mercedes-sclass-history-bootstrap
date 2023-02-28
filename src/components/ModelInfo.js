@@ -3,7 +3,7 @@ const ModelInfo = ({ data }) => {
   return (
     <div className="col-12 col-lg-9 text-center">
       <div>
-        <h3>{model}</h3>
+        <h3 className="pb-3">{model}</h3>
         <div className="image">
           <img src={image} alt={code} />
         </div>
@@ -11,9 +11,9 @@ const ModelInfo = ({ data }) => {
           <span>{description}</span>
         </div>
       </div>
-      <article className="d-flex align-items-center justify-content-center">
+      <article className="d-flex align-items-center justify-content-center flex-wrap gap-2">
         {tags.map((tag, i) => (
-          <div className="d-flex flex-wrap" key={i}>
+          <div key={i}>
             <span className="py-1 px-2 rounded-3 bg-secondary text">{tag}</span>
           </div>
         ))}

@@ -37,7 +37,7 @@ h3 {
 
 .text {
   color: rgb(66, 219, 146);
-  /* background-color: rgb(209, 209, 210); */
+  cursor: pointer;
 }
 
 .activeBtn {
