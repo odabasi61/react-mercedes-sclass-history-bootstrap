@@ -11,7 +11,9 @@ const ModelCode = ({ data, show, setShow }) => {
           return (
             <button
               key={car.id}
-              className="border-0 px-2 m-2 fs-4 fw-bold bg-secondary activeBtn"
+              className={`border-0 px-2 m-2 fs-4 fw-bold bg-secondary ${
+                id === show && "activeBtn"
+              }`}
               id="v-pills-home-tab"
               type="button"
               role="tab"
